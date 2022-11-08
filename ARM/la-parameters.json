@@ -3,22 +3,22 @@
     "contentVersion": "1.0.0.0",
     "parameters": { 
         "location": {
-            "value": "westus2"
+            "value": "uksouth"
         },
         "environmentName": {
-            "value": "env-name"
+            "value": "dev"
         },
         "projectName": {
-            "value": "project-name"
+            "value": "poc"
         },
         "logicAppName": {
-            "value": "la-name"
+            "value": "la-poc-np-dev"
         },
         "appServicePlanName": {
-            "value": "asp-name"
+            "value": "asp-poc-np-dev"
         },
         "storageName": {
-            "value": "storage-name"
+            "value": "stpocnpdev"
         },
         "kind": {
             "value": "StorageV2"
