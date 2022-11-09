@@ -9,6 +9,20 @@
                     "statusCode": 200
                 },
                 "runAfter": {}
+            },
+            "Delay": {
+                "type": "Wait",
+                "inputs": {
+                    "interval": {
+                        "count": 5,
+                        "unit": "Minute"
+                    }
+                },
+                "runAfter": {
+                    "Response": [
+                        "Succeeded"
+                    ]
+                }
             }
         },
         "triggers": {
