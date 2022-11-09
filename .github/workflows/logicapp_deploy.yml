@@ -88,5 +88,5 @@ jobs:
       with:
         azcliversion: 2.30.0
         inlineScript: |
-          az functionapp config appsettings set --name ${{ env.LA_NAME }} --resource-group  ${{ secrets.RG_LA }} --settings "Test=1234"
+          az functionapp config appsettings set --name ${{ env.LA_NAME }} --resource-group  ${{ secrets.RG_LA }} --settings "Test=12346"
           
