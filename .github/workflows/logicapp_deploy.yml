@@ -83,10 +83,10 @@ jobs:
           az functionapp deploy --resource-group ${{ secrets.RG_LA }} --name ${{ env.LA_NAME }} --src-path  logic/azure.parameters.json --type static --target-path parameters.json
         azPSVersion: latest
     
-    - name: Update Logic App Connections 
-      uses: azure/CLI@v1
-      with:
-        azcliversion: 2.30.0
-        inlineScript: |
-          az functionapp config appsettings set --name ${{ env.LA_NAME }} --resource-group  ${{ secrets.RG_LA }} --settings "Test=12346"
+    #- name: Update Logic App Connections 
+    #  uses: azure/CLI@v1
+    #  with:
+    #    azcliversion: 2.30.0
+    #    inlineScript: |
+     #     az functionapp config appsettings set --name ${{ env.LA_NAME }} --resource-group  ${{ secrets.RG_LA }} --settings "Test=12346"
           
